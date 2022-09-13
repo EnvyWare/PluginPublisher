@@ -29,4 +29,15 @@ public class NotifyDiscordTask extends DefaultTask {
         TaskFunctors.runDiscordTask(configuration);
     }
 
+    public Property<String> getWebHookUrl() {
+        return this.webHookUrl;
+    }
+
+    public Property<String> getMessageHeader() {
+        return this.messageHeader;
+    }
+
+    public Property<String> getMessageBody() {
+        return this.messageBody;
+    }
 }
